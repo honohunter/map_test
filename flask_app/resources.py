@@ -203,6 +203,3 @@ class SecretResource(Resource):
     #     current_user = jwt.get_jwt_identity()
     #     return UserModel.find_by_username(current_user)
 
-
-if __name__ == '__main__':
-    app.run(debug=True)

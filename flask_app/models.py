@@ -6,7 +6,7 @@ from passlib.hash import pbkdf2_sha256 as sha256
 class UserModel(db.Model):
     __tablename__ = 'user'
 
-    user_id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer(), primary_key=True)
     username = db.Column(db.String(), unique=True, nullable=False)
     password = db.Column(db.String(), nullable=False)
 
